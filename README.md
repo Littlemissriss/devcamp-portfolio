@@ -24,3 +24,26 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+* 
+
+> These are some examples of what you can do with Markdown
+
+### Features
+
+- Italics
+- Bold
+- Block Quotes
+- Code Snippits
+
+### Code Examples
+
+```ruby
+  def my_great_method
+    puts "this is it"
+  end
+```
+
+```javascript
+  alert("Hi there");
+  console.log("Wow");
+```
