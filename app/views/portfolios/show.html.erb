@@ -1,0 +1,10 @@
+<p>Raw Code: <%= @portfolio_item.inspect %></p>
+<br>
+
+<p><%= image_tag @portfolio_item.main_image %></p>
+<h1><%= @portfolio_item.title %></h1>
+<em><%= @portfolio_item.subtitle %></em>
+<p><%= @portfolio_item.body %></p>
+<br>
+
+<%= link_to "Back", portfolios_path %>
