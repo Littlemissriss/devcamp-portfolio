@@ -10,6 +10,12 @@
 <% @portfolio_item.technologies.each do |t| %>
   <p><%= t.name %></p>
 <% end %>
-<br>
 
+<hr>
+<br>
 <%= link_to "Back", portfolios_path %>
+
+<!--
+<%= params.inspect %>
+<%= session.inspect %> 
+-->
