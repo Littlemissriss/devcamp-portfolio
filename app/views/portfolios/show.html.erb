@@ -1,4 +1,4 @@
-<p>Raw Code: <%= @portfolio_item.inspect %></p>
+<!--<p>Raw Code: <%= @portfolio_item.inspect %></p>-->
 <br>
 
 <p><%= image_tag @portfolio_item.main_image %></p>
@@ -10,6 +10,12 @@
 <% @portfolio_item.technologies.each do |t| %>
   <p><%= t.name %></p>
 <% end %>
-<br>
 
+<hr>
+<br>
 <%= link_to "Back", portfolios_path %>
+
+<!--
+<%= params.inspect %>
+<%= session.inspect %> 
+-->
