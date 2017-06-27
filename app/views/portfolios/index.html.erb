@@ -1,15 +1,16 @@
 <h1>Portfolio Items</h1>
 
+<!--
 <a href="portfolios/new">Create New Item</a> <br>
-<%= link_to "Create New Item", new_portfolio_path %>
-
 <p>Portfolio Path (relative path):<br>
   <%= new_portfolio_path %>
 </p>
-
 <p>Portfolio URL:<br>
   <%= new_portfolio_url %>
 </p>
+-->
+
+<%= link_to "Create New Item", new_portfolio_path %>
 <hr>
 
 <% @portfolio_items.each do |item| %>
