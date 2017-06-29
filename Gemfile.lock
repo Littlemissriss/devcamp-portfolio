@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/Littlemissriss/angell-view-tool
+  revision: ba0d33c13a30463d8bb12168cc9f8e59dcbd726b
+  specs:
+    angell_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -174,6 +180,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  angell_view_tool!
   bootstrap (~> 4.0.0.alpha6)
   byebug
   coffee-rails (~> 4.2)
