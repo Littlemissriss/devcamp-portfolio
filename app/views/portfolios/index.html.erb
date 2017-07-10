@@ -1,4 +1,17 @@
-<h1>Portfolio Items</h1>
+<div class="album text-muted">
+  <div class="container">
+
+    <div class="row">
+      <!--<%= link_to "Create New Item", new_portfolio_path if logged_in?(:site_admin) %>-->
+      
+      <%= render partial: 'portfolio_item', collection: @portfolio_items %>
+    </div>
+    
+  </div>
+</div>
+
+
+
 
 <!--
 <a href="portfolios/new">Create New Item</a> <br>
@@ -9,8 +22,3 @@
   <%= new_portfolio_url %>
 </p>
 -->
-
-<%= link_to "Create New Item", new_portfolio_path if logged_in?(:site_admin) %>
-<hr>
-
-<%= render partial: 'portfolio_item', collection: @portfolio_items %>
