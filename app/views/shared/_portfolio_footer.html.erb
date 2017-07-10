@@ -2,7 +2,7 @@
   <div class="container">
     <p class="float-right">
       
-      <%= link_to "View All Portfolio Items", portfolios_path if (params[:action] == 'show') %> | 
+      <%= link_to "View All Portfolio Items", portfolios_path if ['show', 'edit', 'new'].include?(params[:action]) %> | 
       <a href="#">Back to top</a>
     </p>
     <p>
