@@ -1,4 +1,5 @@
 <%= form_for(blog) do |f| %>
+<!--
   <% if blog.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
@@ -9,6 +10,12 @@
       <% end %>
       </ul>
     </div>
+  <% end %>
+-->
+  <% if blog.errors.any? %>
+    <% blog.errors.full_messages.each do |error| %>
+      <%= js add_gritter(error, title: "Marissa Angell Portfolio", sticky: false, time: 2000) %>
+    <% end %>
   <% end %>
 
   <div class="form-group">
