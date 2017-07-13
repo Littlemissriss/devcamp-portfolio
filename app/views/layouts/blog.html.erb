@@ -8,8 +8,6 @@
     <%= csrf_meta_tags %>
     
     <meta name="keywords" content="<%= @seo_keywords %>" />
-    
-    <!--<%= render "shared/bootstrap" %>-->
 
     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -29,11 +27,12 @@
       </div>
       
       <%= render 'shared/blog_footer' %>
+      
+      <%= alerts %>
+      
       <%= source_helper("blog") %>
       
     </div>
-    
-    
     
   </body>
 </html>
