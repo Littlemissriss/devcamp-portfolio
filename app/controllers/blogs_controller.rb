@@ -10,10 +10,10 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     if logged_in?(:site_admin)
-      @blogs = Blog.all.page(params[:page]).per(5)
+      @blogs = Blog.all.order(updated_at: :desc).page(params[:page]).per(5)
     end
     if !logged_in?(:site_admin) 
-      @blogs = Blog.where("status = 1").page(params[:page]).per(5)
+      @blogs = Blog.where("status = 1").order(updated_at: :desc).page(params[:page]).per(5)
     end
     
     
