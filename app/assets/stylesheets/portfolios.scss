@@ -76,3 +76,20 @@ footer p {
 .portfolio-container {
   padding-top: 30px;
 }
+
+#new-portfolio a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 36px;
+  top: 0;
+  left: 0;
+  z-index: 10; /* Places the link above everything else in the div */
+  text-decoration: none;
+}
+
+#new-portfolio {
+  height: 50px;
+  margin-bottom: 20px;
+}

@@ -9,7 +9,14 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.page(params[:page]).per(5)
+    if logged_in?(:site_admin)
+      @blogs = Blog.all.page(params[:page]).per(5)
+    end
+    if !logged_in?(:site_admin) 
+      @blogs = Blog.where("status = 1").page(params[:page]).per(5)
+    end
+    
+    
     @page_title = "The Blog of Marissa Angell"
   end
 
