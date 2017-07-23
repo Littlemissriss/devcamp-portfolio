@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Lato', Georgia, "Times New Roman", Times, serif;
   color: #555;
 }
 
@@ -26,7 +26,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #333;
 }
@@ -188,4 +188,21 @@ h6, .h6 {
 .comment-footer {
   font-size: 12px;
   font-style: italic;
+}
+
+.blogcrumb a{
+  font-size: 1.25em;
+  margin: 0px 10px 0px 10px;
+}
+
+.nav-name {
+  font-weight: bold;
+  color: white;
+  font-size: 24px;
+  padding: 12px 0px;
+  margin-right: 50px;
+}
+
+.blog-sidebar-source {
+  margin-top: 20px;
 }

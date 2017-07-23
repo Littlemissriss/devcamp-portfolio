@@ -13,12 +13,20 @@ module ApplicationHelper
     content_tag(:div, "My content", class: "my-class")
   end
   
-  def source_helper(layout_name)
+  def source_helper(styles)
     if session[:source]
-      greeting = "Thanks for visiting me from #{session[:source]} and you are on the #{layout_name} layout"
-      content_tag(:p, greeting, class: "source-greeting")
+      greeting = "Thanks for visiting me from #{session[:source]}! Feel free to #{ link_to 'contact me', contact_path, class: 'alert-link' } if you'd like to work together."
+      content_tag(:div, greeting.html_safe, class: styles)
     end
   end
+  
+  ##
+  #def source_helper(layout_name)
+  #  if session[:source]
+  #    greeting = "Thanks for visiting my #{layout_name} from #{session[:source]}!"
+  #    content_tag(:p, greeting, class: "source-greeting")
+  #  end
+  #end
   
   def copyright_generator
     AngellViewTool::Renderer.copyright 'Marissa Angell', 'All rights reserved'

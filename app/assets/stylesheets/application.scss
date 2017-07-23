@@ -50,6 +50,7 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  font-family: 'Lato', sans-serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -73,6 +74,15 @@ body {
 /* Padding for spacing */
 .inner {
   padding: 2rem;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -218,4 +228,34 @@ body {
  
 .app-footer {
   color: white;
+}
+
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.app-card-container a {
+  color: blue;
+}
+
+.profile-image {
+  border: 1px solid grey;
+}
+
+.card-block {
+  margin-bottom: 10px;
+}
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.google-maps {
+  text-align: center;
 }

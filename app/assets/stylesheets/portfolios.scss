@@ -8,6 +8,20 @@
 
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .navbar {
@@ -42,7 +56,7 @@ body {
 
 .card {
   float: left;
-  width: 33.333%;
+  width: 100%;
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
@@ -75,4 +89,21 @@ footer p {
 
 .portfolio-container {
   padding-top: 30px;
+}
+
+#new-portfolio a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 36px;
+  top: 0;
+  left: 0;
+  z-index: 10; /* Places the link above everything else in the div */
+  text-decoration: none;
+}
+
+#new-portfolio {
+  height: 50px;
+  margin-bottom: 20px;
 }
