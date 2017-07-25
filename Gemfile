@@ -82,5 +82,3 @@ gem 'redis', '~> 3.3', '>= 3.3.3'
 
 gem 'redcarpet'
 gem 'coderay', '~> 1.1', '>= 1.1.1'
-
-gem 'sprockets_better_errors'
