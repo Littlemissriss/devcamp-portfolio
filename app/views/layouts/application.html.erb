@@ -21,7 +21,7 @@
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
-          
+          <!--
           <%= video_tag(
               'HardDrivePhotojpeg.mp4',
               id: 'background',
@@ -30,7 +30,16 @@
               muted: true,
               poster: 'home_bg.png'
             ) %>
-    
+          -->
+          <%= video_tag(
+              'Ethernet.mp4',
+              id: 'background',
+              autoplay: true,
+              loop: true,
+              muted: true,
+              poster: 'Ethernet-960px.gif'
+            ) %>
+          
           <%= render "shared/application_nav" %>
           
           <%= yield %>
